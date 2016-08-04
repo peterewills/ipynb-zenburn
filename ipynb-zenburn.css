@@ -17,13 +17,14 @@
 * Green: #7F9F7F
 * Orange: #DFAF8F
 * Yellow: #F0DFAF
-* Cyan: ##93E0E3
+* Cyan: #93E0E3
 * Blue: #8CD0D3
 *
 
 TODO:
  - Fix markdown input colors
  - Make variables being assigned be orange
+
 
 **************************************************/
 
@@ -38,7 +39,7 @@ div.prompt,
 div.CodeMirror,
 div.CodeMirror pre {
 	color: #FFFFEF;
-	font-family:'Hack', monospace;
+	font-family:'Monospace', monospace;
 	font-size: 12pt;
 }
 
@@ -47,18 +48,20 @@ div#ipython_notebook {display: none;}
 
 div#edit-app {background-color: #3F3F3F;}
 
-/* Trying to get stuff to work for background of text edit mode */
+/* Trying to get stuff to work for background of text edit mode 
 
 div#texteditor-backdrop div#texteditor-container div.CodeMirror-gutter,
 div#texteditor-backdrop div#texteditor-container div.CodeMirror-gutters {
     background-color: #3F3F3F;
 }
-
+*/
 div {background-color: #3F3F3F;}
 
 div#texteditor-backdrop {
     background-color: #3f3f3f;
 }
+
+
 
 /* A hacked together solution, but a solution nonetheless */
 
@@ -94,6 +97,10 @@ div#texteditor-backdrop {
 
 .item_icon {
 	color: #CC9393;
+}
+
+.item_name {
+	color: #7F9F7F;
 }
 
 .container {
@@ -252,7 +259,7 @@ body {
 }
 
 .CodeMirror pre {
-  font-family: 'Hack', monospace;
+  font-family: 'Monospace', monospace;
   font-size: 13pt;
 }
 
@@ -268,12 +275,16 @@ body {
     min-height: 0px;
     box-shadow: none;
 }
-#header {
+
+/*
+#header * {
     box-shadow: none;
     background-color: #3F3F3F;
     position: relative;
     z-index: 100;
 }
+
+*/
 #header-container {
     padding-bottom: 5px;
     display: none !important;
@@ -359,13 +370,16 @@ div.output_html {color: #1e2429;}
     vertical-align: middle;
 }
 .ipython_tooltip {
-    border: 2px solid #94BFF3;
+    border: 2px solid #8CD0D3;
     box-shadow: none;
     border-radius: 2px;
     position: absolute;
     z-index: 1000;
     background-color: #3F3F3F;
 }
+
+/* this line doesn't do anything. I want a white cursor when editing markdown! */
+/*.cm-s-ipython .CodeMirror-cursor {border-left: 1px solid #FFFFEF !important;}*/
 
 .ipython_tooltip .tooltiptext pre {
     border: 0px none;
@@ -465,6 +479,10 @@ button.close {
       selected:  #6F6F6F;
 }
 
+div#header{
+	background-color: #3F3F3F;
+}
+
 
 span.ansiblack {color: #00000;}
 span.ansiblue {color: #9CD0D3;}
@@ -483,12 +501,12 @@ div.output_stderr pre {color: #D0D4E6;}
 .cm-s-ipython div.CodeMirror-selected {background: #5F5F5F !important;}
 .cm-s-ipython .CodeMirror-gutters {background: #3F3F3F; border: 0px; border-radius:0px;}
 .cm-s-ipython .CodeMirror-linenumber {color: #7F9F7F !important; font-size: 11pt;}
-.cm-s-ipython .CodeMirror-cursor {border-left: 2px solid #FFFFEF !important;}
+.cm-s-ipython .CodeMirror-cursor {border-left: 2px solid #DFAF8F !important;}
 .cm-s-ipython span.cm-comment {color: #7F9F7F; font-style: normal !important;}
 .cm-s-ipython span.cm-atom {color: #F0DFAF;}
 .cm-s-ipython span.cm-number {color: #FFFFEF;}
 .cm-s-ipython span.cm-property {color: #8CD0D3;}
-.cm-s-ipython span.cm-attribute {color: #FFFFEF;}
+.cm-s-ipython span.cm-attribute {color: #DFAF8F;}
 .cm-s-ipython span.cm-keyword {color: #FAE7B1; font-weight: bold;}
 .cm-s-ipython span.cm-string {color: #CC9393; font-weight: normal;}
 .cm-s-ipython span.cm-operator {color: #FFFFEF; font-weight: normal;}
@@ -517,7 +535,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket { color: #eeeeee; background: 
 
 
 div.cell { border: medium solid #3F3F3F; padding: 0px; border-radius: 0px; }
-div.cell.selected { border: medium solid #94BFF3; padding: 0px; border-radius: 0px; }
+div.cell.selected { border: medium solid #8CD0D3; padding: 0px; border-radius: 0px; }
 .edit_mode div.cell.selected {border: medium solid #6F6F6F !important; padding: 0px; border-radius: 0px; }
 div.cell.edit_mode {border: medium solid #6F6F6F !important; padding: 0px; border-radius: 0px;}
 
@@ -537,18 +555,18 @@ div.input_area {
 }
 /*Input and output cells formatting*/
 div.prompt.input_prompt {
-    font-family: 'Hack', monospace;
+    font-family: 'Monospace', monospace;
     border-right: 2px solid #6F6F6F;
     font-weight: bold;
     font-size: 9.5pt;
-    color: #7F9F7F;
+    color: #8CD0D3;
     background-color: #3F3F3F;
     width: 1em;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
 div.prompt.output_prompt {
-    font-family: 'Hack', monospace;
+    font-family: 'Monospace', monospace;
     font-weight: bold;
     background-color: #3F3F3F;
     color: #3F3F3F;
@@ -559,7 +577,7 @@ div.prompt.output_prompt {
     padding-bottom: 1em;
 }
 div.out_prompt_overlay.prompt {
-    font-family: 'Hack', monospace;
+    font-family: 'Monospace', monospace;
     font-weight: bold;
     font-size: 9.5pt;
     width: 1em;
@@ -570,7 +588,7 @@ div.out_prompt_overlay.prompt {
     -moz-border-radius: 4px;
 }
 div.out_prompt_overlay.prompt:hover {
-    font-family: 'Hack', monospace;
+    font-family: 'Monospace', monospace;
     font-weight: bold;
     font-size: 9.5pt;
     width: 1em;
@@ -608,4 +626,9 @@ div.output_subarea {
     box-flex: 1;
     flex: 1;
     max-width: calc(100% - 14ex);
+}
+
+div.menubar-container #container {
+    background-color: #3F3F3F;
+
 }
