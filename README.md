@@ -1,7 +1,7 @@
 # ipynb-zenburn
-A IPython Notebook stylesheet based on [zenburn] (https://github.com/jnurmine/Zenburn).
+A Jupyter Notebook stylesheet based on [zenburn] (https://github.com/jnurmine/Zenburn).
 
-To use this style, download and rename `ipynb-zenburn.css` file to `custom.css` and place in the directory `~/.ipython/profile-default/custom/custom/`. Then it should automatically load when you start up IPython Notebook.
+To use this style (on a Mac), download and rename `ipynb-zenburn.css` file to `custom.css` and place in the directory `~/.ipython/profile-default/custom/custom/`. Then it should automatically load when you start up Jupyter Notebook.
 
 ![Screenshot](http://i.imgur.com/NncBI2P.png)
 
