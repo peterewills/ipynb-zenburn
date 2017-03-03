@@ -25,13 +25,13 @@ TODO:
  - Fix markdown input colors
  - Make variables being assigned be orange
 
-
 **************************************************/
 
 body {background-color: #3F3F3F;}
 
 a {color: #7F9F7F;}
 
+/* sets font for code */
 div#notebook,
 div.output_area pre,
 div.output_wrapper,
@@ -39,7 +39,7 @@ div.prompt,
 div.CodeMirror,
 div.CodeMirror pre {
 	color: #FFFFEF;
-	font-family:'Monospace', monospace;
+	font-family:'DejaVu Sans Mono', monospace;
 	font-size: 12pt;
 }
 
@@ -236,8 +236,9 @@ div.notebook_list_header {
     line-height: 100%;
     background: #3F3F3F;
 }
+/* toolbar */
 body {
-    font-family: "Helvetica", Helvetica, Arial, sans-serif;
+	font-family: 'Helvetica', sans-serif;
     font-size: 12pt;
     line-height: 1.42857;
     color: #7F9F7F;
@@ -258,9 +259,14 @@ body {
 
 }
 
+/* doesn't do anything? */
 .CodeMirror pre {
-  font-family: 'Monospace', monospace;
-  font-size: 13pt;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 13pt;
+}
+.CodeMirror {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 13pt;
 }
 
 .notebook_app {
@@ -293,19 +299,22 @@ body {
 #header .header-bar {
     background: #3F3F3F;
 }
-/* text in output area (i.e. print some_list) */
-div.output_html {color: #1e2429;}
+/* (some of the) text in output area */
+div.output_html {
+	font-family: 'Helvetica', sans-serif;
+	color: #1e2429;
+}
 
 /* Formatting code in text, code*/
 .rendered_html table,
 .rendered_html th,
 .rendered_html tr,
 .rendered_html td,
-.rendered_html {
-  border: 1px #a4b8cb solid;
-  color: #a4b8cb;
-  background-color: #3F3F3F !important;
-  align-content: left !important;
+.rendered_html { 
+    border: 1px #a4b8cb solid;
+    color: #a4b8cb;
+    background-color: #3F3F3F !important;
+    align-content: left !important;
 }
 
 .navbar-default {
@@ -390,6 +399,7 @@ div.output_html {color: #1e2429;}
 /* Formatting code in markdown cells */
 div.text_cell_render {
     font-family: 'Helvetica', sans-serif;
+	font-size: 14pt;
     background: #3F3F3F;
     font-weight: 310;
     color: #FFFFEF;
@@ -408,6 +418,8 @@ div.text_cell_render a{
 	color: #CC9393;
 }			 
 
+/* headings in markdown */
+
 div.text_cell_render h1,
 div.text_cell_render h2,
 div.text_cell_render h3,
@@ -425,11 +437,12 @@ div.text_cell_render h6 {
 div.output_html {color: #a4b8cb;}
 
 /* Formatting code in text, code*/
+/* doesn't do anything? */
 .rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
-  border: 1px #a4b8cb solid;
-  color: #a4b8cb;
-  background-color: #3F3F3F !important;
-  align-content: left !important;
+    border: 1px #a4b8cb solid;
+    color: #a4b8cb;
+    background-color: #3F3F3F !important;
+    align-content: left !important;
 }
 
 button.close {
@@ -555,7 +568,7 @@ div.input_area {
 }
 /*Input and output cells formatting*/
 div.prompt.input_prompt {
-    font-family: 'Monospace', monospace;
+    font-family: 'DejaVu Sans Mono';
     border-right: 2px solid #6F6F6F;
     font-weight: bold;
     font-size: 9.5pt;
@@ -566,7 +579,7 @@ div.prompt.input_prompt {
     margin-bottom: 0px;
 }
 div.prompt.output_prompt {
-    font-family: 'Monospace', monospace;
+    font-family: 'DejaVu Sans Mono';
     font-weight: bold;
     background-color: #3F3F3F;
     color: #3F3F3F;
@@ -577,7 +590,7 @@ div.prompt.output_prompt {
     padding-bottom: 1em;
 }
 div.out_prompt_overlay.prompt {
-    font-family: 'Monospace', monospace;
+    font-family: 'DejaVu Sans Mono';
     font-weight: bold;
     font-size: 9.5pt;
     width: 1em;
@@ -588,7 +601,7 @@ div.out_prompt_overlay.prompt {
     -moz-border-radius: 4px;
 }
 div.out_prompt_overlay.prompt:hover {
-    font-family: 'Monospace', monospace;
+    font-family: 'DejaVu Sans Mono';
     font-weight: bold;
     font-size: 9.5pt;
     width: 1em;
