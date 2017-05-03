@@ -38,9 +38,10 @@ div.output_wrapper,
 div.prompt,
 div.CodeMirror,
 div.CodeMirror pre {
+	/* code font stuff */
 	color: #FFFFEF;
 	font-family:'DejaVu Sans Mono', monospace;
-	font-size: 12pt;
+	font-size: 11pt; 
 }
 
 /* Hiding the ipython log */
@@ -399,7 +400,7 @@ div.output_html {
 /* Formatting code in markdown cells */
 div.text_cell_render {
     font-family: 'Helvetica', sans-serif;
-	font-size: 14pt;
+	font-size: 13pt;
     background: #3F3F3F;
     font-weight: 310;
     color: #FFFFEF;
@@ -539,7 +540,11 @@ div.output_stderr pre {color: #D0D4E6;}
 .cm-s-ipython span.cm-qualifier {color: #FFFFEF;}
 .cm-s-ipython span.cm-property {color: #8CD0D3;}
 
-
+/* This changes things in Markdown cells.  */
+.CodeMirror-cursor {border-left: 2px solid #DFAF8F !important;}
+span.cm-header{color: #E5DEA5 !important;}
+span.cm-link{color: #CF9393 !important;}
+span.cm-url{color: #8CD0D3 !important;}
 
 div.CodeMirror span.CodeMirror-matchingbracket { color: #eeeeee; background: rgba(53, 108, 180, .75) !important ; }
 div.CodeMirror span.CodeMirror-nonmatchingbracket { color: #eeeeee; background: rgba(191, 97, 106, .65) !important ; }
@@ -627,9 +632,10 @@ div.output_subarea.output_text.output_stream.output_stdout,div.output_subarea.ou
     background-color: #3F3F3F;
     color: #CFD2D9;
 }
+/* output from run code */
 div.output_area pre {
     color: #CFD2D9;
-    font-size: 12pt;
+    font-size: 11pt;
 }
 div.output_subarea {
     overflow-x: auto;
